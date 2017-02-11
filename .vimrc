@@ -1,24 +1,33 @@
-set history=1024
+" set settings
+set nocompatible
+set history=128
 "set autoload
 set nobackup
 set nowb
 set noswapfile
+set hidden
+set encoding=utf8
 
-set wildmenu
-set wildignore=*.o,*~,*.pyc,*/.git/*,*/.svn/*
+" set gui features
 set ruler
 set showmatch
+set showcmd
+set nu
+set showmode
 set foldcolumn=1
 set laststatus=2
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
+" set gui
 syntax enable
 colorscheme desert
 set guioptions-=T
 set guioptions-=e
 
-set encoding=utf8
+set wildmenu
+set wildignore=*.o,*~,*.pyc,*/.git/*,*/.svn/*
 
+" set behaviors
 set ignorecase
 set smartcase
 set incsearch
@@ -34,9 +43,11 @@ set ai
 set si
 set wrap
 
+
 filetype plugin on
 filetype indent on
 
+" set leaderkey and shortkeys
 let mapleader = ","
 let g:mapleader = ","
 

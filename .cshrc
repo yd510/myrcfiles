@@ -1,6 +1,8 @@
+# settings
 set ignoreeof
 set nobeep
 unset autologout
+umask 022
 
 set autolist
 set autocorrect
@@ -12,12 +14,16 @@ set history=2048
 
 set printexitvalue
 
+setenv EDITOR 'vim'
+
+# bindkeys in CLI
 bindkey ^P history-search-backward
 bindkey ^N history-search-forward
 bindkey ^W backward-delete-word
 bindkey ^B backward-word
 bindkey ^F forward-word
 
+#completions in CLI
 complete cd      'p/1/d/'
 complete pushd   'p/1/d/'
 complete where   'n/*/c/'
@@ -25,6 +31,7 @@ complete which   'n/*/c/'
 complete unset   'n/*/s/'
 complete unalias 'n/*/a/'
 
+#alias
 alias  ls        'ls --color'
 alias  ll        'ls -l'
 alias  la        'ls -la'
