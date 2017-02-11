@@ -1,5 +1,14 @@
+" Plugins through Vundle
+set nocompatible " Required by Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+call vundle#end()
+
 " set settings
-set nocompatible
+filetype plugin indent on
 set history=128
 "set autoload
 set nobackup
@@ -44,10 +53,7 @@ set si
 set wrap
 
 
-filetype plugin on
-filetype indent on
-
-" set leaderkey and shortkeys
+" set leaderkey and shortcuts
 let mapleader = ","
 let g:mapleader = ","
 
