@@ -1,15 +1,16 @@
 " Plugins through Vundle
 set nocompatible " Required by Vundle
-filetype off
+filetype off " Required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'dimasg/vim-mark'
 
 call vundle#end()
+filetype plugin indent on " Required
 
 " set settings
-filetype plugin indent on
 set history=128
 "set autoload
 set nobackup
@@ -70,3 +71,7 @@ let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\~$','\.o$','\.pyc$','__pycache__']
 map <leader>nt :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
+
+" vim-mark
+" default key mappings, for reference
+" <leader>m :map or unmap the word under the cursor
