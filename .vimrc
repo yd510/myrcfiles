@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
@@ -52,7 +53,6 @@ set ai
 set si
 set wrap
 
-
 " set leaderkey and shortcuts
 let mapleader = ","
 let g:mapleader = ","
@@ -63,3 +63,10 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" Plugin settings shortcuts
+" NerdTree
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\~$','\.o$','\.pyc$','__pycache__']
+map <leader>nt :NERDTreeToggle<cr>
+map <leader>nf :NERDTreeFind<cr>
