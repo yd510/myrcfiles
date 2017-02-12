@@ -33,9 +33,7 @@ complete unalias 'n/*/a/'
 
 #alias
 alias  ls        'ls --color'
-alias  ll        'ls -l'
-alias  la        'ls -la'
-alias  l.        'la'
+alias  ll        'ls -la'
 
 alias  -         'cd -'
 alias  ..        'cd ..'
