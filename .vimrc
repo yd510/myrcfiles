@@ -16,7 +16,9 @@ set history=128
 set nobackup
 set nowb
 set noswapfile
+set noerrorbells
 set hidden
+set autochdir
 set encoding=utf8
 
 " set gui features
@@ -36,6 +38,7 @@ set guioptions-=T
 set guioptions-=e
 
 set wildmenu
+set wildmode=list:longest
 set wildignore=*.o,*~,*.pyc,*/.git/*,*/.svn/*
 
 " set behaviors
@@ -52,11 +55,21 @@ set shiftwidth=4
 
 set ai
 set si
-set wrap
+set nowrap
+
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
 
 " set leaderkey and shortcuts
 let mapleader = ","
 let g:mapleader = ","
+
+" it's a good idea to use ; instead of : to enter command
+nnoremap ; :
+
+set splitbelow
+set splitright
 
 nmap <leader>w :w<cr>
 map 0 ^
@@ -69,7 +82,8 @@ map <C-l> <C-W>l
 " NerdTree
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\~$','\.o$','\.pyc$','__pycache__']
-map <leader>nt :NERDTreeToggle<cr>
+"map <leader>nt :NERDTreeToggle<cr>
+map <F4> :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 
 " vim-mark

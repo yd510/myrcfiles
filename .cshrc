@@ -10,10 +10,12 @@ set autoexpand
 set correct=all
 set complete=enhance
 set fignore=(.o .pyc)
-set history=2048
+set history=1024
+set savehist=1024 merge
 
 set printexitvalue
 
+setenv PAGER 'less'
 setenv EDITOR 'vim'
 
 # bindkeys in CLI
@@ -33,7 +35,7 @@ complete unalias 'n/*/a/'
 
 #alias
 alias  ls        'ls --color'
-alias  ll        'ls -la'
+alias  ll        'ls -lha'
 
 alias  -         'cd -'
 alias  ..        'cd ..'
@@ -47,3 +49,12 @@ alias  g         'gvim'
 alias egrep      'egrep --color=auto'
 alias fgrep      'fgrep --color=auto'
 alias grep       'grep --color=auto'
+
+alias fn         'find . -name \!:1'
+
+alias vimrc      'gvim ~/.vimrc'
+alias cshrc      'gvim ~/.cshrc'
+
+alias gst        'git status'
+alias gci        'git commit'
+alias gad        'git add'
