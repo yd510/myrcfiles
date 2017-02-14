@@ -10,7 +10,7 @@ This is the backup for my personal configs of vim and csh. Cause it could be cop
 * [NERDTree](https://github.com/scrooloose/nerdtree) Tree broswer
 * [vim-mark](https://github.com/dimasg/vim-mark) A clone of [Mark](http://www.vim.org/scripts/script.php?script_id=2666) on vim.org/scripts/
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter) Vim plugin for intensely orgasmic commenting
-* [vim-snipmate](https://github.com/garbas/vim-snipmate) TextMate-style snippets for Vim
+* [snipmate](https://github.com/vim-scripts/snipMate) TextMate-style snippets for Vim
 * [rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim) Better Rainbow Parentheses
 * [Undotree](https://github.com/mbbill/undotree) undo history visualizer
 

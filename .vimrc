@@ -3,9 +3,16 @@ set nocompatible " Required by Vundle
 filetype off " Required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+" Plugin 'USER/PROJ' from github
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'dimasg/vim-mark'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mbbill/undotree'
+Plugin 'kien/rainbow_parentheses.vim'
+
+" Plugin 'NAME' from vim-scripts.org
+Plugin 'snipMate'
 
 call vundle#end()
 filetype plugin indent on " Required
@@ -83,9 +90,30 @@ map <C-l> <C-W>l
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\~$','\.o$','\.pyc$','__pycache__']
 "map <leader>nt :NERDTreeToggle<cr>
-map <F4> :NERDTreeToggle<cr>
+map <F3> :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 
 " vim-mark
 " default key mappings, for reference
 " <leader>m :map or unmap the word under the cursor
+
+" Undotree
+nnoremap <F4> :UndotreeToggle<cr>
+
+" rainbow_parentheses
+" always on
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" nerdcommenter
+let g:NERDSpaceDelims = 1
+" default key mappings, for reference
+" <leader>cc           <Plug>NERDCommenterComment
+" <leader>cu           <Plug>NERDCommenterUncomment
+" <leader>ci           <Plug>NERDCommenterInvert
+
+" snipMate
+let g:snips_author = 'YOUR NAME'
+
