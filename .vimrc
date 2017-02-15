@@ -10,9 +10,14 @@ Plugin 'dimasg/vim-mark'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mbbill/undotree'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'ap/vim-buftabline'
+Plugin 'michaelzhou999/vmark'
 
 " Plugin 'NAME' from vim-scripts.org
 Plugin 'snipMate'
+Plugin 'molokai'
+
+" Plugin 'file://path'
 
 call vundle#end()
 filetype plugin indent on " Required
@@ -41,6 +46,7 @@ set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:
 " set gui
 syntax enable
 colorscheme desert
+colorscheme molokai
 set guioptions-=T
 set guioptions-=e
 
@@ -117,3 +123,7 @@ let g:NERDSpaceDelims = 1
 " snipMate
 let g:snips_author = 'YOUR NAME'
 
+" vmark
+nmap <c-F2>     <Plug>VMarkToggle<cr>
+nmap <F2>       <Plug>VMarkNext<cr>
+nmap <s-F2>     <Plug>VMarkPrevious<cr>
