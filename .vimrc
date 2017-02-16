@@ -16,6 +16,8 @@ Plugin 'michaelzhou999/vmark'
 " Plugin 'NAME' from vim-scripts.org
 Plugin 'snipMate'
 Plugin 'molokai'
+Plugin 'delimitMate.vim'
+Plugin 'SuperTab--Van-Dewoestine'
 
 " Plugin 'file://path'
 
@@ -75,8 +77,6 @@ set foldlevel=99
 nnoremap <space> za
 
 " set leaderkey and shortcuts
-let mapleader = ","
-let g:mapleader = ","
 
 " it's a good idea to use ; instead of : to enter command
 nnoremap ; :
@@ -84,12 +84,15 @@ nnoremap ; :
 set splitbelow
 set splitright
 
-nmap <leader>w :w<cr>
+nmap <C-s> :w<cr>
 map 0 ^
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+map bn :bnext<cr>
+map bp :bprevious<cr>
 
 " Plugin settings shortcuts
 " NerdTree
@@ -97,7 +100,7 @@ let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\~$','\.o$','\.pyc$','__pycache__']
 "map <leader>nt :NERDTreeToggle<cr>
 map <F3> :NERDTreeToggle<cr>
-map <leader>nf :NERDTreeFind<cr>
+map nf :NERDTreeFind<cr>
 
 " vim-mark
 " default key mappings, for reference
@@ -115,15 +118,14 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " nerdcommenter
 let g:NERDSpaceDelims = 1
-" default key mappings, for reference
-" <leader>cc           <Plug>NERDCommenterComment
-" <leader>cu           <Plug>NERDCommenterUncomment
-" <leader>ci           <Plug>NERDCommenterInvert
+nnoremap cc <Plug>NERDCommenterComment
+nnoremap cu <Plug>NERDCommenterUncomment
+nnoremap ci <Plug>NERDCommenterInvert
 
 " snipMate
 let g:snips_author = 'YOUR NAME'
 
 " vmark
-nmap <c-F2>     <Plug>VMarkToggle<cr>
-nmap <F2>       <Plug>VMarkNext<cr>
+nmap <F2>     <Plug>VMarkToggle<cr>
+nmap <c-F2>       <Plug>VMarkNext<cr>
 nmap <s-F2>     <Plug>VMarkPrevious<cr>

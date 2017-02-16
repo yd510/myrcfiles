@@ -7,14 +7,27 @@ This is the backup for my personal configs of vim and csh. Cause it could be cop
 
 ## Plugins included
 * [Vundle](https://github.com/VundleVim/Vundle.vim) Plugins manager
+
 * [NERDTree](https://github.com/scrooloose/nerdtree) Tree broswer
+
 * [vim-mark](https://github.com/dimasg/vim-mark) A clone of [Mark](http://www.vim.org/scripts/script.php?script_id=2666) on vim.org/scripts/
+
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter) Vim plugin for intensely orgasmic commenting
+
 * [snipmate](https://github.com/vim-scripts/snipMate) TextMate-style snippets for Vim
+
 * [rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim) Better Rainbow Parentheses
+
 * [Undotree](https://github.com/mbbill/undotree) undo history visualizer
+
 * [vim-buftabline](https://github.com/ap/vim-buftabline) renders the buffer list in the tabline
+
 * [vmark](https://github.com/michaelzhou999/vmark) Toggle visual bookmarking and jump through bookmarks
+
 * [molokai](https://github.com/tomasr/molokai) Molokai color scheme for Vim
+
+* [SuperTab](https://github.com/vim-scripts/SuperTab--Van-Dewoestine) Do all your insert-mode completion with Tab.
+
+* [delimitMate](https://github.com/Raimondi/delimitMate) auto-completion for quotes, parens, brackets, etc.
 
 And so on...
