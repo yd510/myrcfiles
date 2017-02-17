@@ -86,13 +86,13 @@ set splitright
 
 nmap <C-s> :w<cr>
 map 0 ^
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
 
-map bn :bnext<cr>
-map bp :bprevious<cr>
+nnoremap bn :bnext<cr>
+nnoremap bp :bprevious<cr>
 
 " Plugin settings shortcuts
 " NerdTree
@@ -103,8 +103,9 @@ map <F3> :NERDTreeToggle<cr>
 map nf :NERDTreeFind<cr>
 
 " vim-mark
-" default key mappings, for reference
-" <leader>m :map or unmap the word under the cursor
+nnoremap mm <Plug>MarkSet
+nnoremap mn <Plug>MarkSearchCurrentNext
+nnoremap mp <Plug>MarkSearchCurrentPrev
 
 " Undotree
 nnoremap <F4> :UndotreeToggle<cr>
@@ -118,14 +119,18 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " nerdcommenter
 let g:NERDSpaceDelims = 1
-nnoremap cc <Plug>NERDCommenterComment
-nnoremap cu <Plug>NERDCommenterUncomment
-nnoremap ci <Plug>NERDCommenterInvert
+nmap cc <Plug>NERDCommenterComment
+nmap cu <Plug>NERDCommenterUncomment
+nmap ci <Plug>NERDCommenterInvert
 
 " snipMate
 let g:snips_author = 'YOUR NAME'
 
 " vmark
-nmap <F2>     <Plug>VMarkToggle<cr>
-nmap <c-F2>       <Plug>VMarkNext<cr>
-nmap <s-F2>     <Plug>VMarkPrevious<cr>
+nmap <F2>       <Plug>VMarkToggle<cr>
+nmap <C-F2>     <Plug>VMarkNext<cr>
+nmap <S-F2>     <Plug>VMarkPrevious<cr>
+
+" supertab
+" use C-TAB to indent
+let g:SuperTabMappingTabLiteral='<C-TAB>'
