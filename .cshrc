@@ -4,6 +4,8 @@ set nobeep
 unset autologout
 umask 022
 
+set prompt='%U%{\033[1;32m%}%m%u:%{\033[1;34m%}%B%~%b%#'
+
 set autolist
 set autocorrect
 set autoexpand

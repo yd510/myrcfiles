@@ -103,9 +103,9 @@ map <F3> :NERDTreeToggle<cr>
 map nf :NERDTreeFind<cr>
 
 " vim-mark
-nnoremap mm <Plug>MarkSet
-nnoremap mn <Plug>MarkSearchCurrentNext
-nnoremap mp <Plug>MarkSearchCurrentPrev
+nmap mm <Plug>MarkSet
+nmap mn <Plug>MarkSearchCurrentNext
+nmap mp <Plug>MarkSearchCurrentPrev
 
 " Undotree
 nnoremap <F4> :UndotreeToggle<cr>
