@@ -18,6 +18,7 @@ Plugin 'snipMate'
 Plugin 'molokai'
 Plugin 'delimitMate.vim'
 Plugin 'SuperTab--Van-Dewoestine'
+Plugin 'verilog_systemverilog.vim'
 
 " Plugin 'file://path'
 
