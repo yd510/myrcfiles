@@ -52,6 +52,8 @@ colorscheme desert
 colorscheme molokai
 set guioptions-=T
 set guioptions-=e
+set lines=100
+set columns=80
 
 set wildmenu
 set wildmode=list:longest
@@ -120,9 +122,9 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " nerdcommenter
 let g:NERDSpaceDelims = 1
-nmap cc <Plug>NERDCommenterComment
-nmap cu <Plug>NERDCommenterUncomment
-nmap ci <Plug>NERDCommenterInvert
+map cc <Plug>NERDCommenterComment
+map cu <Plug>NERDCommenterUncomment
+map ci <Plug>NERDCommenterInvert
 
 " snipMate
 let g:snips_author = 'YOUR NAME'

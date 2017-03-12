@@ -10,7 +10,7 @@ set autolist
 set autocorrect
 set autoexpand
 set correct=all
-set complete=enhance
+# set complete=enhance
 set fignore=(.o .pyc)
 set history=1024
 set savehist=1024 merge
