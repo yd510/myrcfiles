@@ -136,4 +136,5 @@ nmap <S-F2>     <Plug>VMarkPrevious<cr>
 
 " supertab
 " use C-TAB to indent
-let g:SuperTabMappingTabLiteral='<C-TAB>'
+let g:SuperTabMappingForward = '<C-p>'
+let g:SuperTabMappingBackward = '<C-n>'
