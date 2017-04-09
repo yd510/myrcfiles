@@ -13,6 +13,7 @@ set correct=all
 # set complete=enhance
 set fignore=(.o .pyc)
 set history=1024
+set histdup=erase
 set savehist=1024 merge
 
 set printexitvalue
